@@ -1,0 +1,29 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "diwaliverse-secret-messages",
+  "main": "src/worker/index.ts",
+  "compatibility_date": "2024-11-01",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "html_handling": "single-page-application",
+    "not_found_handling": "single-page-application"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "diwaliverse_secrets_db",
+      "database_id": "diwaliverse-secrets-d1-prod",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "vars": {
+    "ENVIRONMENT": "production",
+    "APP_NAME": "DiwaliVerse Secret Messages",
+    "MAX_ATTEMPTS_PER_WINDOW": "5",
+    "RATE_LIMIT_WINDOW_SECONDS": "900"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "DiwaliVerse — Secret Messages",
+  "description": "Romantic, mysterious, and elegant password-protected secret messages with animated wax-sealed envelopes, floating starry sparkles, and Cloudflare Workers + D1 backend.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
